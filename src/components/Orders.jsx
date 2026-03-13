@@ -1,6 +1,4 @@
 function Orders(){
-    return(
-        <h2>My Orders</h2>
-    )
+    return <h1>My Orders</h1>
 }
 export default Orders
