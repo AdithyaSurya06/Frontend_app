@@ -10,6 +10,7 @@ function Login() {
   const handleLogin = async () => {
     const url = API_URL + "/auth/signin";
     const response = await axios.post(url, user);
+    console.log(response.data);
     setUser(response.data);
     if (cart.length > 0) Navigate("/cart");
     else Navigate("/");
